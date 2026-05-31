@@ -1,8 +1,15 @@
 const mobileToggle = document.getElementById('mobileToggle');
 const navLinks = document.getElementById('navLinks');
+const navAnchors = navLinks?.querySelectorAll('a');
 
 mobileToggle?.addEventListener('click', () => {
   navLinks?.classList.toggle('open');
+});
+
+navAnchors?.forEach((anchor) => {
+  anchor.addEventListener('click', () => {
+    navLinks?.classList.remove('open');
+  });
 });
 
 const revealElements = document.querySelectorAll('.reveal');
