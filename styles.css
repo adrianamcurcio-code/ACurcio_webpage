@@ -162,7 +162,7 @@ textarea {
 .section-header h2,
 .case-act h3,
 .case-intro h3 {
-  font-size: clamp(2.8rem, 4vw, 4.6rem);
+  font-size: clamp(2.8rem, 3vw, 4.6rem);
   line-height: 0.98;
   letter-spacing: -0.04em;
   margin: 0;
@@ -264,7 +264,7 @@ textarea {
   display: block;
   background: none;
   color: var(--accent);
-  font-size: 0.83rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
