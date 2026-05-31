@@ -251,7 +251,7 @@ textarea {
 .about-layout {
   display: grid;
   grid-template-columns: 1.45fr 0.95fr;
-  gap: 36px;
+  gap: 48px;
   align-items: start;
 }
 
@@ -279,23 +279,21 @@ textarea {
 
 .about-body {
   display: grid;
-  gap: 18px;
+  gap: 12px;
   max-width: 680px;
 }
 
 .about-body p {
   margin: 0;
-}
-
-.about-body p {
   max-width: 52ch;
+  line-height: 1.52;
 }
 
 .about-visual {
   display: grid;
   align-items: start;
   position: static;
-  margin-top: 4rem;
+  margin-top: 2.4rem;
 }
 
 .about-portrait {
@@ -313,6 +311,29 @@ textarea {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* Featured quote styling to read like an editorial callout */
+.featured-quote {
+  margin: 6px 0 22px;
+  padding: 18px 20px;
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+}
+.featured-quote p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  color: var(--text);
+  font-style: italic;
+}
+
+/* Transitional/reflection paragraph styling */
+.lead-reflection {
+  margin-top: 8px;
+  font-weight: 600;
+  color: var(--text);
 }
 
 
