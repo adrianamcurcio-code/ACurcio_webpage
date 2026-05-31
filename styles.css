@@ -295,7 +295,6 @@ textarea {
   display: grid;
   align-items: start;
   position: static;
-  margin-top: 4rem;
 }
 
 .about-portrait {
@@ -306,6 +305,13 @@ textarea {
   border-radius: 30px;
   background: #f5f5f5;
   box-shadow: 0 30px 70px rgba(31, 24, 48, 0.08);
+}
+
+/* float the portrait to align with the paragraph it appears next to */
+.about-portrait.float {
+  float: right;
+  margin-left: 32px;
+  margin-top: 6px;
 }
 
 .about-portrait img {
@@ -603,6 +609,13 @@ textarea {
   .about-visual {
     position: static;
     margin-top: 0;
+  }
+
+  .about-portrait.float {
+    float: none;
+    margin: 0 0 18px 0;
+    max-width: 100%;
+    min-height: 220px;
   }
 }
 
