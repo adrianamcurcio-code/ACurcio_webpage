@@ -435,18 +435,48 @@ textarea {
   gap: 22px;
 }
 
-.visual-card,
-.visual-panel,
-.tracker-card,
-.status-table-wrap,
-.contact-panel,
-.panel-card,
-.about-card,
-.work-card,
-.profile-card,
-.stat-card {
+visual-card,
+visual-panel,
+tracker-card,
+status-table-wrap,
+contact-panel,
+panel-card,
+about-card,
+work-card,
+profile-card,
+stat-card {
   background: var(--surface);
 }
+
+/* Contact icons (LinkedIn, Email) styled as violet accent icons */
+.contact-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+  align-items: center;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.18s ease, transform 0.12s ease;
+  color: var(--muted);
+}
+
+.contact-links a:hover { transform: translateY(-2px); }
+
+.contact-links .icon { width: 18px; height: 18px; display: block; }
+.contact-links .icon path { fill: currentColor; }
+
+.contact-links a.linkedin,
+.contact-links a.mail { color: var(--accent); }
+.contact-links a.linkedin:hover,
+.contact-links a.mail:hover { background: rgba(75,59,102,0.06); }
 
 .visual-card,
 .visual-panel,
