@@ -295,6 +295,7 @@ textarea {
   display: grid;
   align-items: start;
   position: static;
+  margin-top: 4rem;
 }
 
 .about-portrait {
@@ -601,6 +602,7 @@ textarea {
 
   .about-visual {
     position: static;
+    margin-top: 0;
   }
 }
 
