@@ -273,7 +273,7 @@ textarea {
 }
 
 .about-copy-block .section-header h2 {
-  font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+  font-size: clamp(1.7rem, 1.8vw, 2.4rem);
   line-height: 1.22;
 }
 
@@ -294,8 +294,7 @@ textarea {
 .about-visual {
   display: grid;
   align-items: start;
-  position: sticky;
-  top: 120px;
+  position: static;
 }
 
 .about-portrait {
