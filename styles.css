@@ -417,7 +417,7 @@ textarea {
 }
 
 .case-intro h3 {
-  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-size: clamp(2rem, 2vw, 2.8rem);
 }
 
 .case-act {
@@ -448,7 +448,7 @@ textarea {
 }
 
 .case-highlights div {
-  background: var(--surface-soft);
+  background: #ede6f7;
   border-radius: 24px;
   padding: 20px 22px;
   border: 1px solid var(--border);
