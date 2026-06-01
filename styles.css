@@ -275,7 +275,7 @@ textarea {
 
   background: linear-gradient(
     to right,
-    #f6f2f9 30%,
+    #ffffff 30%,
     #eadef4 80%,
     #fdfcfc 100%
   );
@@ -306,7 +306,7 @@ textarea {
 .about-body {
   display: grid;
   gap: 12px;
-  max-width: 680px;
+  max-width: 620px;
 }
 
 .about-body p {
@@ -324,7 +324,7 @@ textarea {
 
 .about-image {
   align-self: start;
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 .about-image img {
