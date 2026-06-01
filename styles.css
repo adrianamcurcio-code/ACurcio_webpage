@@ -250,9 +250,13 @@ textarea {
 
 .about-layout {
   display: grid;
-  grid-template-columns: 1.45fr 0.95fr;
-  gap: 56px;
+  grid-template-columns: 1.35fr 0.9fr;
+  gap: 72px;
   align-items: start;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
 }
 
 /* Soft atmospheric full-bleed section for About */
@@ -316,6 +320,17 @@ textarea {
   align-items: start;
   position: static;
   margin-top: 4rem;
+}
+
+.about-image {
+  margin-top: 60px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+  display: block;
 }
 
 .about-portrait {
