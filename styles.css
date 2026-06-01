@@ -748,7 +748,7 @@ stat-card {
 .chapter-block p { color: var(--muted); line-height: 1.6; margin: 0 0 16px; }
 .chapter-emphasis { color: #62488d; font-style: italic; margin-bottom: 16px; }
 .image-placeholder {
-  width: 100%;
+  width: 60%;
   min-height: 340px;
   background: linear-gradient(180deg, rgba(28,28,28,0.04), rgba(28,28,28,0.02));
   border-radius: 12px;
