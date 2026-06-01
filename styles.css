@@ -758,6 +758,12 @@ stat-card {
   color: var(--muted);
   margin: 26px 0 36px;
 }
+.image-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
 .image-placeholder .placeholder-label { font-weight: 600; }
 
 @media (max-width: 720px) {
