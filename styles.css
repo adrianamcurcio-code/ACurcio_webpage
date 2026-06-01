@@ -274,9 +274,9 @@ textarea {
   box-shadow: none;
 
   background: linear-gradient(
-    to left,
-    #f6f2f9 20%,
-    #eadef4 55%,
+    to right,
+    #f6f2f9 30%,
+    #eadef4 80%,
     #fdfcfc 100%
   );
 }
