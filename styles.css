@@ -417,7 +417,7 @@ textarea {
 }
 
 .case-intro h3 {
-  font-size: clamp(2rem, 2vw, 2.8rem);
+  font-size: clamp(2rem, 1vw, 2.8rem);
 }
 
 .case-act {
@@ -743,8 +743,8 @@ stat-card {
 }
 .section-sep { border: none; height: 1px; margin: 36px 0; }
 .chapter-block { margin: 56px 0; }
-.chapter-subtitle { margin: 0 0 12px; font-size: 1.15rem; }
-.chapter-block p { color: var(--muted); line-height: 1.6; margin: 0 0 14px; }
+.chapter-subtitle { margin: 0 0 14px; font-size: 1.15rem; color: #4b3b66; }
+.chapter-block p { color: var(--muted); line-height: 1.6; margin: 0 0 16px; }
 .image-placeholder {
   width: 100%;
   min-height: 340px;
@@ -754,7 +754,7 @@ stat-card {
   align-items: center;
   justify-content: center;
   color: var(--muted);
-  margin-top: 18px;
+  margin: 26px 0 36px;
 }
 .image-placeholder .placeholder-label { font-weight: 600; }
 
