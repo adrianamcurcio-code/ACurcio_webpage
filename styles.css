@@ -274,9 +274,9 @@ textarea {
   box-shadow: none;
 
   background: linear-gradient(
-    270deg,
+    to left,
     #f6f2f9 0%,
-    #faf8fb 50%,
+    #f8f4fb 55%,
     #fdfcfc 100%
   );
 }
@@ -323,7 +323,7 @@ textarea {
 }
 
 .about-image {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .about-image img {
