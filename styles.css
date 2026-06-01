@@ -141,6 +141,7 @@ textarea {
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 20px;
+  margin-top: 80px
 }
 
 .eyebrow,
