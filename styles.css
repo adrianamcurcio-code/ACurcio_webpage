@@ -745,6 +745,7 @@ stat-card {
 .chapter-block { margin: 56px 0; }
 .chapter-subtitle { margin: 0 0 14px; font-size: 1.15rem; color: #4b3b66; }
 .chapter-block p { color: var(--muted); line-height: 1.6; margin: 0 0 16px; }
+.chapter-emphasis { color: var(--accent); font-style: italic; margin-bottom: 16px; }
 .image-placeholder {
   width: 100%;
   min-height: 340px;
