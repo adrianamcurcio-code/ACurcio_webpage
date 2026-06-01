@@ -257,11 +257,11 @@ textarea {
 
 /* Editorial card container for About section */
 .about {
-  background: linear-gradient(90deg, rgba(75,59,102,0.04) 0%, rgba(246,244,243,0.6) 50%, rgba(75,59,102,0.03) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 48%, rgba(241,236,248,0.85) 100%);
   border-radius: 28px;
-  padding: 48px;
-  border: 1px solid rgba(75,59,102,0.06);
-  box-shadow: 0 24px 60px rgba(31, 24, 48, 0.06);
+  padding: 52px;
+  border: 1px solid rgba(75,59,102,0.08);
+  box-shadow: 0 30px 70px rgba(31, 24, 48, 0.08);
 }
 
 .about-copy-block {
@@ -302,7 +302,7 @@ textarea {
   display: grid;
   align-items: start;
   position: static;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .about-portrait {
