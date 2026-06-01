@@ -235,7 +235,7 @@ textarea {
 }
 
 .panel-card h2 {
-  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-size: clamp(1.8rem, 3.0vw, 2.5rem);
   margin: 0;
 }
 
@@ -245,7 +245,7 @@ textarea {
   flex-wrap: wrap;
   margin-top: 24px;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.85rem;
 }
 
 .about-layout {
@@ -275,8 +275,8 @@ textarea {
 
   background: linear-gradient(
     to right,
-    #ffffff 30%,
-    #eadef4 80%,
+    #fffefe 20%,
+    #eadef4ad 70%,
     #fdfcfc 100%
   );
 }
@@ -324,7 +324,7 @@ textarea {
 
 .about-image {
   align-self: start;
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 
 .about-image img {
@@ -706,6 +706,61 @@ stat-card {
     border-radius: 16px;
     border: none;
   }
+}
+
+/* Case chapter — single-column editorial layout */
+.case-chapter {
+  padding: 72px 0;
+}
+.case-chapter .chapter-inner {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+}
+.case-chapter .section-tag {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 14px;
+}
+.case-chapter .chapter-title {
+  font-size: clamp(2rem, 3.2vw, 2.6rem);
+  margin: 6px 0 18px;
+  line-height: 1.06;
+}
+.case-chapter .chapter-intro .lead {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.chapter-quote {
+  font-style: italic;
+  margin: 12px 0 18px;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+.section-sep { border: none; height: 1px; margin: 36px 0; }
+.chapter-block { margin: 56px 0; }
+.chapter-subtitle { margin: 0 0 12px; font-size: 1.15rem; }
+.chapter-block p { color: var(--muted); line-height: 1.6; margin: 0 0 14px; }
+.image-placeholder {
+  width: 100%;
+  min-height: 340px;
+  background: linear-gradient(180deg, rgba(28,28,28,0.04), rgba(28,28,28,0.02));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  margin-top: 18px;
+}
+.image-placeholder .placeholder-label { font-weight: 600; }
+
+@media (max-width: 720px) {
+  .case-chapter .chapter-inner { padding: 0 16px; }
+  .image-placeholder { min-height: 220px; }
 }
 
 @media (max-width: 720px) {
