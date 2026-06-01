@@ -276,7 +276,7 @@ textarea {
   background: linear-gradient(
     to left,
     #f6f2f9 20%,
-    #f8f4fb 55%,
+    #eadef4 55%,
     #fdfcfc 100%
   );
 }
@@ -324,7 +324,7 @@ textarea {
 
 .about-image {
   align-self: start;
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 
 .about-image img {
