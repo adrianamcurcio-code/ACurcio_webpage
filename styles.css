@@ -1003,12 +1003,6 @@ stat-card {
   max-width: 100%;
 }
 
-.tracking-copy-panel h3 {
-  margin: 0;
-  font-size: clamp(2rem, 2.4vw, 2.4rem);
-  line-height: 1.08;
-}
-
 .tracking-copy-panel p {
   margin: 0 0 18px;
 }
@@ -1023,8 +1017,9 @@ stat-card {
 
 .process-overview {
   display: grid;
-  gap: 16px;
-  margin-bottom: 24px;
+  gap: 14px;
+  margin: 24px 0 30px;
+  width: 100%;
 }
 
 .process-card-label {
@@ -1039,7 +1034,7 @@ stat-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 12px;
   padding: 16px 18px;
   background: #EDE6F7;
   border-radius: 999px;
@@ -1063,11 +1058,11 @@ stat-card {
   z-index: 1;
   white-space: nowrap;
   color: #534573;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  padding: 9px 12px;
+  padding: 10px 14px;
   border-radius: 999px;
-  background: rgba(237, 230, 247, 0.85);
+  background: rgba(237, 230, 247, 0.9);
 }
 
 .tracker-card-title {
@@ -1095,8 +1090,8 @@ stat-card {
 
 .compact-tracker th,
 .compact-tracker td {
-  padding: 10px 12px;
-  font-size: 0.9rem;
+  padding: 12px 14px;
+  font-size: 0.92rem;
   color: #534573;
 }
 
@@ -1120,18 +1115,27 @@ stat-card {
 
 .compact-tracker th:first-child,
 .compact-tracker td:first-child {
-  width: 10%;
-  padding-left: 0;
+  width: 12%;
+  padding-left: 20px;
 }
 
 .compact-tracker th:nth-child(2),
 .compact-tracker td:nth-child(2) {
-  width: 60%;
+  width: 58%;
+  padding-left: 16px;
 }
 
 .compact-tracker th:last-child,
 .compact-tracker td:last-child {
   width: 30%;
+}
+
+.person-tag-cell {
+  padding-left: 20px;
+}
+
+.doc-type {
+  padding-left: 10px;
 }
 
 .status-pill {
