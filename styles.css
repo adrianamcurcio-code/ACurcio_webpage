@@ -1174,6 +1174,7 @@ stat-card {
   padding: 24px 24px 26px;
   display: grid;
   gap: 8px;
+  box-shadow: -6px 0 16px rgba(83, 69, 115, 0.04);
 }
 
 .challenge-category {
@@ -1186,7 +1187,7 @@ stat-card {
 
 .challenge-title {
   font-size: 0.92rem;
-  font-weight: 400;
+  font-weight: 300;
   color: #5d585f;
   line-height: 1.5;
 }
@@ -1198,8 +1199,8 @@ stat-card {
 }
 
 .challenge-arrow {
-  color: #534573;
-  font-size: 1.1rem;
+  color: #EDE6F7;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1;
 }
@@ -1207,7 +1208,7 @@ stat-card {
 .challenge-solution {
   font-size: 0.95rem;
   color: #1c1c1c;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.5;
 }
 
