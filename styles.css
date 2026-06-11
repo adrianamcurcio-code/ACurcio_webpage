@@ -1016,22 +1016,34 @@ stat-card {
 }
 
 .tracking-table thead tr {
-  background: #EDE6F7;
+  background: #F7F3FC;
 }
 
 .tracking-table th {
   color: #534573;
   font-weight: 600;
-  font-size: 0.85rem;
-  padding: 14px 12px;
+  font-size: 0.88rem;
+  padding: 18px 22px 18px 16px;
   text-align: left;
   letter-spacing: 0.04em;
   text-transform: none;
-  border-bottom: 1px solid rgba(230, 225, 218, 0.6);
+  border-bottom: 1px solid rgba(237, 230, 247, 0.9);
+}
+
+.tracking-table td {
+  padding: 18px 22px 18px 16px;
+  color: #4F4A53;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.tracking-table th:last-child,
+.tracking-table td:last-child {
+  padding-right: 34px;
 }
 
 .tracking-table tbody tr {
-  border-bottom: 1px solid rgba(230, 225, 218, 0.4);
+  border-bottom: 1px solid rgba(230, 225, 218, 0.35);
   transition: background 0.25s ease;
 }
 
@@ -1040,33 +1052,26 @@ stat-card {
 }
 
 .tracking-table tbody tr:hover {
-  background: rgba(237, 230, 247, 0.1);
-}
-
-.tracking-table td {
-  padding: 14px 12px;
-  color: #4F4A53;
-  font-size: 0.93rem;
-  line-height: 1.5;
+  background: rgba(237, 230, 247, 0.08);
 }
 
 .tracking-table .person-tag-cell {
-  width: 56px;
-  padding-left: 8px;
+  width: 48px;
+  padding-left: 12px;
 }
 
 .person-tag {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 24px;
-  min-height: 24px;
-  border-radius: 12px;
+  min-width: 22px;
+  min-height: 22px;
+  border-radius: 8px;
   background: #EDE6F7;
   color: #534573;
   font-weight: 600;
-  font-size: 0.85rem;
-  letter-spacing: 0.16em;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 0 8px;
 }
