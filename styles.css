@@ -1040,8 +1040,8 @@ stat-card {
   border-radius: 999px;
   position: relative;
   overflow: hidden;
-  margin-top: 650px;
-  margin-bottom: 120px;
+  margin-top: 50px;
+  margin-bottom: 110px;
 }
 
 .process-bar::before {
@@ -1049,7 +1049,7 @@ stat-card {
   position: absolute;
   left: 18px;
   right: 18px;
-  top: 50%;
+  top: 60%;
   height: 1px;
   background: rgba(83, 69, 115, 0.15);
   transform: translateY(-50%);
