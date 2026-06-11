@@ -950,3 +950,121 @@ stat-card {
     font-size: clamp(2.1rem, 8vw, 3rem);
   }
 }
+
+/* Stats Block Styling */
+.stats-block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 28px;
+  margin: 48px 0 64px;
+  padding: 48px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.stat-item {
+  display: grid;
+  gap: 16px;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1;
+  color: #534573;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: var(--text);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Tracking Stages */
+.tracking-stages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px 12px;
+  margin-top: 42px;
+  padding: 36px 24px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(75, 59, 102, 0.03) 0%, rgba(108, 79, 66, 0.02) 100%);
+  border: 1px solid var(--border);
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.stage-number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #534573;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.stage-name {
+  font-size: 0.85rem;
+  color: var(--text);
+  font-weight: 600;
+  text-align: center;
+  min-width: 70px;
+}
+
+.stage-arrow {
+  color: rgba(28, 28, 28, 0.25);
+  font-size: 1.2rem;
+  line-height: 1;
+  flex: 0 0 auto;
+}
+
+/* Responsive: Tablet (2 columns for stats) */
+@media (max-width: 975px) {
+  .stats-block {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 24px;
+    padding: 36px 0;
+  }
+}
+
+/* Responsive: Mobile (1 column for stats, stacked stages) */
+@media (max-width: 680px) {
+  .stats-block {
+    grid-template-columns: 1fr;
+    gap: 32px 0;
+    padding: 28px 0;
+    margin: 36px 0 48px;
+  }
+
+  .tracking-stages {
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px 16px;
+    margin-top: 32px;
+  }
+
+  .stage-name {
+    min-width: auto;
+  }
+
+  .stage-arrow {
+    transform: rotate(90deg);
+    margin: 4px 0;
+  }
+}
