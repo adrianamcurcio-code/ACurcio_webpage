@@ -1040,7 +1040,7 @@ stat-card {
   border-radius: 999px;
   position: relative;
   overflow: hidden;
-  margin-top: 35px;
+  margin-top: 25px;
   margin-bottom: 90px;
 }
 
@@ -1062,7 +1062,7 @@ stat-card {
   color: #534573;
   font-size: 0.82rem;
   font-weight: 600;
-  padding: 10px 14px;
+  padding: 10px 20px;
   border-radius: 999px;
   background: rgba(237, 230, 247, 0.9);
 }
