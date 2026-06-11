@@ -1199,7 +1199,7 @@ stat-card {
 }
 
 .challenge-arrow {
-  color: #ede6f700;
+  color: #4b3b66;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1;
@@ -1225,8 +1225,7 @@ stat-card {
 }
 
 .closing-block {
-  margin: 64px 0 48px !important;
-  margin-top: 30px !important;
+  margin: 64px 20px 48px !important;
 }
 
 @media (max-width: 720px) {
