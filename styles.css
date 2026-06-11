@@ -891,7 +891,11 @@ stat-card {
 }
 .section-sep { border: none; height: 1px; margin: 36px 0; }
 .chapter-block { margin: 56px 0; }
-.chapter-subtitle { margin: 0 0 14px; font-size: 1.5rem; color: #4b3b66; }
+.chapter-block .chapter-subtitle {
+  margin: 0 0 22px;
+  font-size: 1.5rem;
+  color: #4b3b66;
+}
 .chapter-block p { color: var(--muted); line-height: 1.6; margin: 0 0 16px; }
 .chapter-emphasis { color: #62488d; font-style: italic; margin-bottom: 16px; }
 .image-placeholder {
