@@ -984,54 +984,196 @@ stat-card {
   line-height: 1.4;
 }
 
-/* Tracking Stages */
-.tracking-stages {
+/* Tracking Table Styling */
+.tracking-table-wrapper {
+  margin-top: 42px;
+}
+
+.tracking-table-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #534573;
+  margin-bottom: 20px;
+}
+
+.tracking-table-container {
+  border-radius: 28px;
+  overflow: hidden;
+  background: #F8F7F5;
+  border: 1px solid #E6E1DA;
+  box-shadow: 0 4px 12px rgba(28, 28, 28, 0.04);
+}
+
+.tracking-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #F8F7F5;
+}
+
+.tracking-table thead tr {
+  background: #534573;
+}
+
+.tracking-table th {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 16px 14px;
+  text-align: left;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tracking-table tbody tr {
+  border-bottom: 1px solid #E6E1DA;
+  transition: background 0.25s ease;
+}
+
+.tracking-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.tracking-table tbody tr:hover {
+  background: rgba(83, 69, 115, 0.02);
+}
+
+.tracking-table td {
+  padding: 18px 14px;
+  color: #4F4A53;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.tracking-table .doc-type {
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.tracking-table .progress-cell {
+  text-align: center;
+}
+
+.checkmark {
+  color: #534573;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.not-applicable {
+  color: #A9A299;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.pending {
+  color: #534573;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.delay {
+  color: #534573;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-complete {
+  background: #F1EFEA;
+  color: #534573;
+}
+
+.status-pending {
+  background: #EAE6F2;
+  color: #534573;
+}
+
+.status-in-progress {
+  background: #EFEAE4;
+  color: #534573;
+}
+
+.status-blocked {
+  background: #F3EEEA;
+  color: #534573;
+}
+
+.tracking-legend {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 16px 12px;
-  margin-top: 42px;
-  padding: 36px 24px;
-  border-radius: 24px;
-  background: linear-gradient(135deg, rgba(75, 59, 102, 0.03) 0%, rgba(108, 79, 66, 0.02) 100%);
-  border: 1px solid var(--border);
+  gap: 24px 32px;
+  margin-top: 24px;
+  padding: 20px 0;
+  font-size: 0.9rem;
 }
 
-.stage {
+.legend-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 8px;
-  flex: 0 0 auto;
+  color: #4F4A53;
 }
 
-.stage-number {
-  width: 40px;
-  height: 40px;
-  display: flex;
+.legend-icon {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  background: #534573;
-  color: #fff;
+  width: 20px;
+  min-width: 20px;
+  color: #534573;
   font-weight: 700;
-  font-size: 0.95rem;
 }
 
-.stage-name {
-  font-size: 0.85rem;
-  color: var(--text);
-  font-weight: 600;
-  text-align: center;
-  min-width: 70px;
+/* Responsive: Tablet */
+@media (max-width: 975px) {
+  .tracking-table th,
+  .tracking-table td {
+    padding: 14px 10px;
+    font-size: 0.9rem;
+  }
+
+  .tracking-table th {
+    font-size: 0.85rem;
+  }
 }
 
-.stage-arrow {
-  color: rgba(28, 28, 28, 0.25);
-  font-size: 1.2rem;
-  line-height: 1;
-  flex: 0 0 auto;
+/* Responsive: Mobile */
+@media (max-width: 680px) {
+  .tracking-table-container {
+    border-radius: 20px;
+    overflow-x: auto;
+  }
+
+  .tracking-table {
+    min-width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .tracking-table th,
+  .tracking-table td {
+    padding: 12px 8px;
+    font-size: 0.85rem;
+  }
+
+  .tracking-table th {
+    font-size: 0.8rem;
+  }
+
+  .tracking-legend {
+    gap: 16px 20px;
+    font-size: 0.85rem;
+  }
 }
 
 /* Responsive: Tablet (2 columns for stats) */
@@ -1050,21 +1192,5 @@ stat-card {
     gap: 32px 0;
     padding: 28px 0;
     margin: 36px 0 48px;
-  }
-
-  .tracking-stages {
-    flex-direction: column;
-    gap: 12px;
-    padding: 24px 16px;
-    margin-top: 32px;
-  }
-
-  .stage-name {
-    min-width: auto;
-  }
-
-  .stage-arrow {
-    transform: rotate(90deg);
-    margin: 4px 0;
   }
 }

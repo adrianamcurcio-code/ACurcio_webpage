@@ -173,35 +173,79 @@
             <p>Once the process became too complex to track mentally, I needed a clearer way to see what was happening.</p>
             <p>So I created a system to help me stay organized, track progress, solve blockers, and avoid letting important details slip through the cracks.</p>
             
-            <div class="tracking-stages reveal">
-              <div class="stage">
-                <div class="stage-number">1</div>
-                <div class="stage-name">Requested</div>
+            <div class="tracking-table-wrapper reveal">
+              <div class="tracking-table-label">PROGRESS AT A GLANCE</div>
+              
+              <div class="tracking-table-container">
+                <table class="tracking-table">
+                  <thead>
+                    <tr>
+                      <th>Document Type</th>
+                      <th>Requested</th>
+                      <th>Received</th>
+                      <th>Corrected</th>
+                      <th>Apostilled</th>
+                      <th>Translated</th>
+                      <th>Final Review</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="doc-type">Birth Certificate</td>
+                      <td class="progress-cell"><span class="checkmark">✓</span></td>
+                      <td class="progress-cell"><span class="checkmark">✓</span></td>
+                      <td class="progress-cell"><span class="not-applicable">—</span></td>
+                      <td class="progress-cell"><span class="not-applicable">—</span></td>
+                      <td class="progress-cell"><span class="not-applicable">—</span></td>
+                      <td class="progress-cell"><span class="not-applicable">—</span></td>
+                      <td><span class="status-badge status-complete">Complete</span></td>
+                    </tr>
+                    <tr>
+                      <td class="doc-type">Marriage Certificate</td>
+                      <td class="progress-cell"><span class="checkmark">✓</span></td>
+                      <td class="progress-cell"><span class="checkmark">✓</span></td>
+                      <td class="progress-cell"><span class="checkmark">✓</span></td>
+                      <td class="progress-cell"><span class="checkmark">✓</span></td>
+                      <td class="progress-cell"><span class="checkmark">✓</span></td>
+                      <td class="progress-cell"><span class="pending">Pending</span></td>
+                      <td><span class="status-badge status-in-progress">In Progress</span></td>
+                    </tr>
+                    <tr>
+                      <td class="doc-type">Death Certificate</td>
+                      <td class="progress-cell"><span class="checkmark">✓</span></td>
+                      <td class="progress-cell"><span class="delay">Delay</span></td>
+                      <td class="progress-cell"><span class="delay">Delay</span></td>
+                      <td class="progress-cell"><span class="not-applicable">—</span></td>
+                      <td class="progress-cell"><span class="not-applicable">—</span></td>
+                      <td class="progress-cell"><span class="not-applicable">—</span></td>
+                      <td><span class="status-badge status-blocked">Blocked</span></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div class="stage-arrow">→</div>
-              <div class="stage">
-                <div class="stage-number">2</div>
-                <div class="stage-name">Received</div>
-              </div>
-              <div class="stage-arrow">→</div>
-              <div class="stage">
-                <div class="stage-number">3</div>
-                <div class="stage-name">Corrected</div>
-              </div>
-              <div class="stage-arrow">→</div>
-              <div class="stage">
-                <div class="stage-number">4</div>
-                <div class="stage-name">Apostilled</div>
-              </div>
-              <div class="stage-arrow">→</div>
-              <div class="stage">
-                <div class="stage-number">5</div>
-                <div class="stage-name">Translated</div>
-              </div>
-              <div class="stage-arrow">→</div>
-              <div class="stage">
-                <div class="stage-number">6</div>
-                <div class="stage-name">Final Review</div>
+
+              <div class="tracking-legend">
+                <div class="legend-item">
+                  <span class="legend-icon checkmark">✓</span>
+                  <span>Completed</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-icon pending">•</span>
+                  <span>Pending</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-icon delay">↻</span>
+                  <span>Delayed</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-icon blocked">◆</span>
+                  <span>Blocked</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-icon not-applicable">—</span>
+                  <span>Not Applicable</span>
+                </div>
               </div>
             </div>
           </div>
