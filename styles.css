@@ -1017,14 +1017,14 @@ stat-card {
 
 .process-overview {
   display: grid;
-  gap: 34px;
-  margin: 34px 0 34px;
+  gap: 44px;
+  margin: 34px 0 48px;
   width: 100%;
 }
 
 .process-card-label {
-  font-size: 0.75rem;
-  letter-spacing: 0.16em;
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #534573;
   font-weight: 700;
@@ -1122,7 +1122,7 @@ stat-card {
 .compact-tracker th:nth-child(2),
 .compact-tracker td:nth-child(2) {
   width: 56%;
-  padding-left: 26px;
+  padding-left: 32px;
 }
 
 .compact-tracker th:last-child,
@@ -1135,7 +1135,7 @@ stat-card {
 }
 
 .doc-type {
-  padding-left: 26px;
+  padding-left: 32px;
 }
 
 .status-pill {
