@@ -993,7 +993,7 @@ stat-card {
   display: block;
   font-size: 0.82rem;
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #534573;
   margin-bottom: 24px;
@@ -1025,8 +1025,7 @@ stat-card {
   font-size: 0.85rem;
   padding: 16px 12px;
   text-align: left;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
   border-bottom: 1px solid rgba(230, 225, 218, 0.6);
 }
 
@@ -1043,17 +1042,28 @@ stat-card {
   background: rgba(237, 230, 247, 0.15);
 }
 
+.person-group-row {
+  background: #EDE6F7;
+  border-bottom: 1px solid rgba(237, 230, 247, 0.8) !important;
+}
+
+.person-group-row:hover {
+  background: #EDE6F7;
+}
+
+.person-group-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #534573;
+  padding: 18px 12px !important;
+  letter-spacing: 0.01em;
+}
+
 .tracking-table td {
   padding: 14px 12px;
   color: #4F4A53;
   font-size: 0.93rem;
   line-height: 1.5;
-}
-
-.tracking-table .person-name {
-  font-weight: 500;
-  color: #1c1c1c;
-  width: 80px;
 }
 
 .tracking-table .doc-type {
@@ -1143,8 +1153,9 @@ stat-card {
     font-size: 0.8rem;
   }
 
-  .tracking-table .person-name {
-    width: auto;
+  .person-group-label {
+    font-size: 0.9rem;
+    padding: 14px 10px !important;
   }
 }
 
@@ -1168,6 +1179,11 @@ stat-card {
 
   .tracking-table th {
     font-size: 0.75rem;
+  }
+
+  .person-group-label {
+    font-size: 0.85rem;
+    padding: 12px 8px !important;
   }
 
   .tracking-legend {
