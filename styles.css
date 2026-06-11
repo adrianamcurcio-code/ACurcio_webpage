@@ -989,6 +989,36 @@ stat-card {
   margin-top: 42px;
 }
 
+.tracking-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 0.9fr);
+  gap: 48px;
+  align-items: start;
+  margin-top: 24px;
+}
+
+.tracking-table-panel,
+.tracking-copy-panel {
+  min-width: 0;
+}
+
+.tracking-copy-panel {
+  display: grid;
+  gap: 18px;
+  max-width: 460px;
+}
+
+@media (max-width: 980px) {
+  .tracking-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .tracking-copy-panel {
+    max-width: 100%;
+  }
+}
+
 .tracking-table-label {
   display: block;
   font-size: 0.82rem;

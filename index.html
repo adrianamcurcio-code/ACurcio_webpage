@@ -168,109 +168,113 @@
             <p>What seemed simple at first quickly became a lot more complex than expected. Missing records, document corrections, different institutions, long waiting times, and dependencies meant that one delayed step could easily slow everything else down.</p>
           </div>
 
-          <div class="chapter-block">
-            <h3 class="chapter-subtitle">Building a system that gave me clarity</h3>
-            <p>Once the process became too complex to track mentally, I needed a clearer way to see what was happening.</p>
-            <p>So I created a system to help me stay organized, track progress, solve blockers, and avoid letting important details slip through the cracks.</p>
-            
-            <div class="tracking-table-wrapper reveal">
-              <div class="tracking-table-label">PROGRESS AT A GLANCE</div>
-              
-              <div class="tracking-table-container">
-                <table class="tracking-table">
-                  <thead>
-                    <tr>
-                      <th>Person</th>
-                      <th>Document</th>
-                      <th>Requested</th>
-                      <th>Received</th>
-                      <th>Corrected</th>
-                      <th>Apostilled</th>
-                      <th>Translated</th>
-                      <th>Final Review</th>
-                      <th>Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="person-tag-cell"><span class="person-tag">A</span></td>
-                      <td class="doc-type">Birth Certificate</td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="not-applicable">—</span></td>
-                      <td class="progress-cell"><span class="not-applicable">—</span></td>
-                      <td class="progress-cell"><span class="not-applicable">—</span></td>
-                      <td class="progress-cell"><span class="not-applicable">—</span></td>
-                      <td class="status-text">Complete</td>
-                    </tr>
-                    <tr>
-                      <td class="person-tag-cell"><span class="person-tag">A</span></td>
-                      <td class="doc-type">Marriage Certificate</td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="pending">◦</span></td>
-                      <td class="status-text">In Progress</td>
-                    </tr>
-                    <tr>
-                      <td class="person-tag-cell"><span class="person-tag">A</span></td>
-                      <td class="doc-type">Death Certificate</td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="delay">↻</span></td>
-                      <td class="progress-cell"><span class="delay">↻</span></td>
-                      <td class="progress-cell"><span class="not-applicable">—</span></td>
-                      <td class="progress-cell"><span class="not-applicable">—</span></td>
-                      <td class="progress-cell"><span class="not-applicable">—</span></td>
-                      <td class="status-text">Blocked</td>
-                    </tr>
-                    <tr>
-                      <td class="person-tag-cell"><span class="person-tag">B</span></td>
-                      <td class="doc-type">Birth Certificate</td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="not-applicable">—</span></td>
-                      <td class="progress-cell"><span class="not-applicable">—</span></td>
-                      <td class="status-text">Complete</td>
-                    </tr>
-                    <tr>
-                      <td class="person-tag-cell"><span class="person-tag">B</span></td>
-                      <td class="doc-type">Marriage Certificate</td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="checkmark">✓</span></td>
-                      <td class="progress-cell"><span class="pending">◦</span></td>
-                      <td class="progress-cell"><span class="not-applicable">—</span></td>
-                      <td class="progress-cell"><span class="not-applicable">—</span></td>
-                      <td class="status-text">In Progress</td>
-                    </tr>
-                  </tbody>
-                </table>
+          <div class="chapter-block tracking-block">
+            <div class="tracking-layout">
+              <div class="tracking-table-panel reveal">
+                <div class="tracking-table-label">PROGRESS AT A GLANCE</div>
 
-                <div class="tracking-legend">
-                  <div class="legend-item">
-                    <span class="legend-icon checkmark">✓</span>
-                    <span>Completed</span>
-                  </div>
-                  <div class="legend-item">
-                    <span class="legend-icon pending">◦</span>
-                    <span>Pending</span>
-                  </div>
-                  <div class="legend-item">
-                    <span class="legend-icon delay">↻</span>
-                    <span>Delayed</span>
-                  </div>
-                  <div class="legend-item">
-                    <span class="legend-icon not-applicable">—</span>
-                    <span>Not Applicable</span>
+                <div class="tracking-table-container">
+                  <table class="tracking-table">
+                    <thead>
+                      <tr>
+                        <th>Person</th>
+                        <th>Document</th>
+                        <th>Requested</th>
+                        <th>Received</th>
+                        <th>Corrected</th>
+                        <th>Apostilled</th>
+                        <th>Translated</th>
+                        <th>Final Review</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="person-tag-cell"><span class="person-tag">A</span></td>
+                        <td class="doc-type">Birth Certificate</td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="not-applicable">—</span></td>
+                        <td class="progress-cell"><span class="not-applicable">—</span></td>
+                        <td class="progress-cell"><span class="not-applicable">—</span></td>
+                        <td class="progress-cell"><span class="not-applicable">—</span></td>
+                        <td class="status-text">Complete</td>
+                      </tr>
+                      <tr>
+                        <td class="person-tag-cell"><span class="person-tag">A</span></td>
+                        <td class="doc-type">Marriage Certificate</td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="pending">◦</span></td>
+                        <td class="status-text">In Progress</td>
+                      </tr>
+                      <tr>
+                        <td class="person-tag-cell"><span class="person-tag">A</span></td>
+                        <td class="doc-type">Death Certificate</td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="delay">↻</span></td>
+                        <td class="progress-cell"><span class="delay">↻</span></td>
+                        <td class="progress-cell"><span class="not-applicable">—</span></td>
+                        <td class="progress-cell"><span class="not-applicable">—</span></td>
+                        <td class="progress-cell"><span class="not-applicable">—</span></td>
+                        <td class="status-text">Blocked</td>
+                      </tr>
+                      <tr>
+                        <td class="person-tag-cell"><span class="person-tag">B</span></td>
+                        <td class="doc-type">Birth Certificate</td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="not-applicable">—</span></td>
+                        <td class="progress-cell"><span class="not-applicable">—</span></td>
+                        <td class="status-text">Complete</td>
+                      </tr>
+                      <tr>
+                        <td class="person-tag-cell"><span class="person-tag">B</span></td>
+                        <td class="doc-type">Marriage Certificate</td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="checkmark">✓</span></td>
+                        <td class="progress-cell"><span class="pending">◦</span></td>
+                        <td class="progress-cell"><span class="not-applicable">—</span></td>
+                        <td class="progress-cell"><span class="not-applicable">—</span></td>
+                        <td class="status-text">In Progress</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="tracking-legend">
+                    <div class="legend-item">
+                      <span class="legend-icon checkmark">✓</span>
+                      <span>Completed</span>
+                    </div>
+                    <div class="legend-item">
+                      <span class="legend-icon pending">◦</span>
+                      <span>Pending</span>
+                    </div>
+                    <div class="legend-item">
+                      <span class="legend-icon delay">↻</span>
+                      <span>Delayed</span>
+                    </div>
+                    <div class="legend-item">
+                      <span class="legend-icon not-applicable">—</span>
+                      <span>Not Applicable</span>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <div class="tracking-copy-panel reveal">
+                <h3 class="chapter-subtitle">Building a system that gave me clarity</h3>
+                <p>Once the process became too complex to track mentally, I needed a clearer way to see what was happening.</p>
+                <p>So I created a system to help me stay organized, track progress, solve blockers, and avoid letting important details slip through the cracks.</p>
+              </div>
+            </div>
           </div>
-        </div>
       </section>
     </main>
   </div>
