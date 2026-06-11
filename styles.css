@@ -869,6 +869,15 @@ stat-card {
   margin: 6px 0 18px;
   line-height: 1.06;
 }
+.act-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #534573;
+  margin-bottom: 20px;
+}
 .case-chapter .chapter-intro .lead {
   font-size: 1.05rem;
   color: var(--muted);
@@ -982,6 +991,16 @@ stat-card {
   color: var(--text);
   font-weight: 500;
   line-height: 1.4;
+}
+
+.stats-footnote {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #534573;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  margin: -36px 0 0;
+  opacity: 0.55;
 }
 
 /* Tracking Table Styling */
