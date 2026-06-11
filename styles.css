@@ -637,6 +637,144 @@ stat-card {
   min-width: 100%;
 }
 
+.case-study-detail {
+  padding: 72px 0;
+}
+
+.case-study-detail .section-header {
+  gap: 16px;
+}
+
+.case-study-detail .case-study-intro {
+  max-width: 760px;
+  margin-top: 22px;
+}
+
+.case-study-detail .case-study-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin: 40px 0 0;
+}
+
+.case-study-stat {
+  display: grid;
+  gap: 12px;
+  padding: 32px 24px;
+  border-radius: 28px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.stat-number {
+  font-size: clamp(2.6rem, 4vw, 4rem);
+  line-height: 1;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.case-study-stat span:last-child {
+  color: var(--muted);
+  text-transform: capitalize;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+
+.case-study-copy {
+  max-width: 780px;
+  margin-top: 32px;
+  display: grid;
+  gap: 18px;
+}
+
+.case-study-copy p {
+  margin: 0;
+}
+
+.challenge-grid {
+  display: grid;
+  gap: 32px;
+  margin-top: 42px;
+}
+
+.challenge-summary {
+  display: grid;
+  gap: 18px;
+  max-width: 780px;
+}
+
+.section-subheading {
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text);
+}
+
+.challenge-list {
+  display: grid;
+  gap: 18px;
+}
+
+.challenge-item {
+  padding: 26px;
+  border-radius: 26px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 14px;
+}
+
+.challenge-item h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.challenge-item p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.micro-cta {
+  margin-top: 4px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.reflection-block {
+  border-radius: 28px;
+  padding: 30px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(75, 59, 102, 0.12);
+}
+
+.reflection-block h4 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.reflection-block p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.75;
+}
+
+@media (max-width: 975px) {
+  .case-study-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .case-study-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
 .status-table th,
 .status-table td {
   padding: 18px 16px;
