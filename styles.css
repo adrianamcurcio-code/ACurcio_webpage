@@ -993,24 +993,26 @@ stat-card {
   display: block;
   font-size: 0.82rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #534573;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .tracking-table-container {
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
-  background: #F8F7F5;
+  background: #F1F1F1;
   border: 1px solid #E6E1DA;
   box-shadow: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .tracking-table {
   width: 100%;
   border-collapse: collapse;
-  background: #F8F7F5;
+  background: #F1F1F1;
 }
 
 .tracking-table thead tr {
@@ -1020,15 +1022,16 @@ stat-card {
 .tracking-table th {
   color: #534573;
   font-weight: 600;
-  font-size: 0.9rem;
-  padding: 14px 14px;
+  font-size: 0.85rem;
+  padding: 16px 12px;
   text-align: left;
-  letter-spacing: 0.02em;
-  border-bottom: 1px solid #E6E1DA;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(230, 225, 218, 0.6);
 }
 
 .tracking-table tbody tr {
-  border-bottom: 1px solid #E6E1DA;
+  border-bottom: 1px solid rgba(230, 225, 218, 0.5);
   transition: background 0.25s ease;
 }
 
@@ -1037,24 +1040,30 @@ stat-card {
 }
 
 .tracking-table tbody tr:hover {
-  background: rgba(237, 230, 247, 0.25);
+  background: rgba(237, 230, 247, 0.15);
 }
 
 .tracking-table td {
-  padding: 16px 14px;
+  padding: 14px 12px;
   color: #4F4A53;
-  font-size: 0.95rem;
+  font-size: 0.93rem;
   line-height: 1.5;
 }
 
+.tracking-table .person-name {
+  font-weight: 500;
+  color: #1c1c1c;
+  width: 80px;
+}
+
 .tracking-table .doc-type {
-  font-weight: 600;
+  font-weight: 500;
   color: #1c1c1c;
 }
 
 .tracking-table .progress-cell {
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .checkmark {
@@ -1071,7 +1080,7 @@ stat-card {
 
 .pending {
   color: #534573;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1;
 }
@@ -1085,17 +1094,22 @@ stat-card {
 
 .status-text {
   color: #534573;
-  font-weight: 600;
-  font-size: 0.95rem;
+  font-weight: 500;
+  font-size: 0.93rem;
+  white-space: nowrap;
 }
 
 .tracking-legend {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 32px;
-  margin-top: 20px;
-  padding: 16px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 28px 32px;
+  margin-top: 0;
+  padding: 24px 12px;
   font-size: 0.9rem;
+  border-top: 1px solid rgba(230, 225, 218, 0.6);
+  background: #F1F1F1;
 }
 
 .legend-item {
@@ -1103,17 +1117,18 @@ stat-card {
   align-items: center;
   gap: 8px;
   color: #4F4A53;
+  font-size: 0.9rem;
 }
 
 .legend-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  min-width: 20px;
+  width: 18px;
+  min-width: 18px;
   color: #534573;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 /* Responsive: Tablet */
@@ -1125,14 +1140,18 @@ stat-card {
   }
 
   .tracking-table th {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+  }
+
+  .tracking-table .person-name {
+    width: auto;
   }
 }
 
 /* Responsive: Mobile */
 @media (max-width: 680px) {
   .tracking-table-container {
-    border-radius: 14px;
+    border-radius: 10px;
     overflow-x: auto;
   }
 
@@ -1148,13 +1167,17 @@ stat-card {
   }
 
   .tracking-table th {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
   .tracking-legend {
     gap: 16px 20px;
     font-size: 0.85rem;
-    padding: 12px 0;
+    padding: 16px 8px;
+  }
+
+  .legend-item {
+    font-size: 0.85rem;
   }
 }
 
