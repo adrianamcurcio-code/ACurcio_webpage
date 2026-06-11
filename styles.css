@@ -1178,11 +1178,11 @@ stat-card {
 }
 
 .challenge-category {
-  font-size: 0.75rem;
+  font-size: 0.82rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #534573;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .challenge-title {
@@ -1199,7 +1199,7 @@ stat-card {
 }
 
 .challenge-arrow {
-  color: #EDE6F7;
+  color: #ede6f700;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1;
