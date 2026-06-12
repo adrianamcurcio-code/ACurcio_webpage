@@ -950,10 +950,6 @@ stat-card {
   flex-wrap: wrap;
 }
 
-.gen-blocks.count-1 { justify-content: center; }
-.gen-blocks.count-2 { justify-content: center; }
-.gen-blocks.count-3 { justify-content: center; }
-
 .record-block {
   background: rgba(83, 69, 115, 0.06);
   border: 1px solid rgba(83, 69, 115, 0.12);
@@ -966,45 +962,75 @@ stat-card {
   white-space: nowrap;
 }
 
-.gen-connector {
-  height: 20px;
-  position: relative;
-  display: flex;
-  justify-content: center;
+.record-block.question {
+  background: #EDE6F7;
+  border-color: rgba(83, 69, 115, 0.18);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 10px 18px;
+  color: #534573;
+  min-width: 32px;
+  text-align: center;
 }
 
-.gen-connector::before {
-  content: '';
+.gen-connector {
+  display: flex;
+  gap: 8px;
+  height: 24px;
+  padding-left: 60px;
+  position: relative;
+}
+
+.gen-connector.triple { padding-left: 60px; }
+.gen-connector.double { padding-left: 60px; }
+.gen-connector.single { padding-left: 60px; }
+.gen-connector.single-center { padding-left: 0; justify-content: center; }
+
+.conn-line {
   width: 1px;
   height: 100%;
   background: rgba(83, 69, 115, 0.2);
   display: block;
 }
 
+.conn-void {
+  width: 1px;
+  height: 100%;
+  display: block;
+  visibility: hidden;
+}
+
+.gen-connector.triple .conn-line { width: 1px; }
+.gen-connector.double .conn-line { width: 1px; }
+.gen-connector.single .conn-line { width: 1px; }
+.gen-connector.single-center .conn-line { width: 1px; }
+
 .ancestor-row {
   display: flex;
   justify-content: center;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .ancestor-block {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   background: #EDE6F7;
-  border: 1px solid rgba(83, 69, 115, 0.12);
-  border-radius: 12px;
-  padding: 14px 22px;
+  border: 1px solid rgba(83, 69, 115, 0.2);
+  border-radius: 14px;
+  padding: 16px 26px;
 }
 
 .ancestor-check {
   color: #534573;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .ancestor-label {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
