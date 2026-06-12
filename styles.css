@@ -899,6 +899,125 @@ stat-card {
 }
 .chapter-block p { color: var(--muted); line-height: 1.6; margin: 0 0 16px; }
 .chapter-emphasis { color: #62488d; font-style: italic; margin-bottom: 16px; }
+
+/* Family Tree Layout */
+.family-tree-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 44px;
+  align-items: start;
+}
+
+.family-tree-text h3 {
+  margin-top: 0;
+}
+
+.family-viz {
+  background: #F7F7F7;
+  border: 1px solid #E5E2EA;
+  border-radius: 18px;
+  padding: 24px 20px 22px;
+  display: grid;
+  gap: 0;
+}
+
+.gen-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gen-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 26px;
+  border-radius: 6px;
+  background: #EDE6F7;
+  color: #534573;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  padding: 0 8px;
+}
+
+.gen-blocks {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.gen-blocks.count-1 { justify-content: center; }
+.gen-blocks.count-2 { justify-content: center; }
+.gen-blocks.count-3 { justify-content: center; }
+
+.record-block {
+  background: rgba(83, 69, 115, 0.06);
+  border: 1px solid rgba(83, 69, 115, 0.12);
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: #534573;
+  white-space: nowrap;
+}
+
+.gen-connector {
+  height: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.gen-connector::before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: rgba(83, 69, 115, 0.2);
+  display: block;
+}
+
+.ancestor-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.ancestor-block {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #EDE6F7;
+  border: 1px solid rgba(83, 69, 115, 0.12);
+  border-radius: 12px;
+  padding: 14px 22px;
+}
+
+.ancestor-check {
+  color: #534573;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.ancestor-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #534573;
+}
+
+@media (max-width: 720px) {
+  .family-tree-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
 .image-placeholder {
   width: 60%;
   min-height: 340px;
