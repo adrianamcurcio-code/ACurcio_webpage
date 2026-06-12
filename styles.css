@@ -951,7 +951,7 @@ stat-card {
   grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
   gap: 44px;
   align-items: start;
-  margin: 28px 0 28px;
+  margin: 44px 0 28px;
 }
 
 .clue-text p {
@@ -976,8 +976,9 @@ stat-card {
   text-transform: uppercase;
   color: #534573;
   text-align: center;
-  margin: 0 0 34px;
+  margin: 0 auto 34px;
   line-height: 1.6;
+  max-width: 660px;
 }
 
 .clue-highlight {
