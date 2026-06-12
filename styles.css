@@ -1008,15 +1008,14 @@ stat-card {
   background: #EDE6F7;
   border: 1px solid rgba(83, 69, 115, 0.12);
   border-radius: 18px;
-  padding: 20px 24px;
+  padding: 28px 24px 22px;
   text-align: center;
   flex: 1;
   max-width: 240px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-height: 130px;
+  min-height: 140px;
 }
 
 .story-card-label {
