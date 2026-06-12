@@ -1697,3 +1697,69 @@ stat-card {
     margin: 36px 0 48px;
   }
 }
+
+/* Closing / Contact Section */
+.closing-section {
+  margin-top: 80px;
+  padding: 100px 20px 120px;
+  background: linear-gradient(180deg, transparent 0%, #F7F6F5 30%, #F4F1F8 70%, #EDE6F7 100%);
+  text-align: center;
+  border-radius: 0;
+}
+
+.closing-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.closing-thanks {
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: #1c1c1c;
+  margin: 0 0 18px;
+  line-height: 1.15;
+}
+
+.closing-warm {
+  font-size: 1.15rem;
+  color: #534573;
+  font-weight: 500;
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.closing-cta {
+  font-size: 0.95rem;
+  color: #5d585f;
+  margin: 0 0 40px;
+  line-height: 1.5;
+}
+
+.closing-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.closing-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #EDE6F7;
+  color: #534573;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.closing-icon-link:hover {
+  transform: translateY(-3px);
+  background: #e0d6ef;
+}
+
+.closing-icon {
+  width: 22px;
+  height: 22px;
+}
