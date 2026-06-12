@@ -1029,7 +1029,8 @@ stat-card {
   display: flex;
   justify-content: center;
   margin: 48px 0 56px;
-  width: 80%;
+  width: 100%;
+  margin-bottom: 56px;
 }
 
 .chapter-image img {
