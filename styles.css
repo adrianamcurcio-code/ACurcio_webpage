@@ -1706,8 +1706,7 @@ stat-card {
   text-align: center;
   border-radius: 0;
   width: 100vw;
-  margin-left: 0;
-  overflow: hidden;
+  margin-left: calc(50% - 50vw);
 }
 
 .closing-inner {
