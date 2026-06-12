@@ -1201,6 +1201,8 @@ stat-card {
 
 .act1-card .challenge-card {
   margin: 0;
+  padding: 30px 24px 32px;
+  gap: 12px;
 }
 
 @media (max-width: 720px) {
