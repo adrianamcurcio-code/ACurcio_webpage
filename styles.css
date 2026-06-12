@@ -962,7 +962,36 @@ stat-card {
 }
 
 .clue-card .challenge-card {
+  margin: 0 0 0;
+}
+
+.clue-arrow-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 28px 0 12px;
+}
+
+.clue-arrow {
+  color: #62488d;
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.clue-reveal {
+  font-size: 0.82rem;
+  font-weight: 300;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #534573;
+  text-align: center;
   margin: 0;
+  line-height: 1.6;
+}
+
+.clue-highlight {
+  color: #62488d;
+  font-weight: 600;
 }
 
 @media (max-width: 720px) {
