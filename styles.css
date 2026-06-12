@@ -292,7 +292,7 @@ textarea {
 
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 0 48px 0 120px;
 }
 
 /* Soft atmospheric full-bleed section for About */
@@ -360,7 +360,7 @@ textarea {
 
 .about-image {
   align-self: start;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .about-image img {
@@ -372,8 +372,8 @@ textarea {
 
 .about-portrait {
   width: 100%;
-  max-width: 320px;
-  min-height: 320px;
+  max-width: 275px;
+  min-height: 275px;
   overflow: hidden;
   border-radius: 20px;
   background: transparent;
@@ -862,6 +862,10 @@ stat-card {
   .work-grid,
   .skills .skill-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-layout {
+    padding: 0 32px;
   }
 
   .about-visual {
