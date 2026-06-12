@@ -981,6 +981,20 @@ stat-card {
   font-weight: 600;
 }
 
+.chapter-image {
+  display: flex;
+  justify-content: center;
+  margin: 48px 0 56px;
+  width: 100%;
+}
+
+.chapter-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 18px;
+  display: block;
+}
+
 @media (max-width: 720px) {
   .clue-layout {
     grid-template-columns: 1fr;
