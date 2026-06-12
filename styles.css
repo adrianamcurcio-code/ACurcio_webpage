@@ -310,9 +310,10 @@ textarea {
   box-shadow: none;
 
   background: linear-gradient(
-    to right,
-    #fffefe 20%,
-    #eadef4ad 70%,
+    to left,
+    #EDE6F7 15%,
+    #F4F1F8 50%,
+    #fffefe 85%
   );
 }
 
@@ -359,7 +360,7 @@ textarea {
 
 .about-image {
   align-self: start;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .about-image img {
@@ -367,6 +368,11 @@ textarea {
   max-width: 420px;
   border-radius: 20px;
   display: block;
+}
+
+.about-emphasis {
+  color: #534573;
+  font-weight: 600;
 }
 
 .about-portrait {
