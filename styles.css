@@ -865,9 +865,9 @@ stat-card {
   margin-bottom: 14px;
 }
 .case-chapter .chapter-title {
-  font-size: clamp(2rem, 3.2vw, 2.6rem);
+  font-size: clamp(1.65rem, 2.65vw, 2.15rem);
   margin: 6px 0 18px;
-  line-height: 1.06;
+  line-height: 1.12;
 }
 .act-label {
   display: block;
@@ -1184,6 +1184,11 @@ stat-card {
 }
 
 /* Challenge Cards */
+.challenge-card-single {
+  max-width: 460px;
+  margin: 36px 0 44px;
+}
+
 .challenge-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
