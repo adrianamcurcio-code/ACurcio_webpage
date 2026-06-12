@@ -951,7 +951,7 @@ stat-card {
   grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
   gap: 44px;
   align-items: start;
-  margin: 32px 0 0;
+  margin: 28px 0 30px;
 }
 
 .clue-text p {
@@ -962,20 +962,7 @@ stat-card {
 }
 
 .clue-card .challenge-card {
-  margin: 0 0 0;
-}
-
-.clue-arrow-wrap {
-  display: flex;
-  justify-content: center;
-  margin: 28px 0 12px;
-}
-
-.clue-arrow {
-  color: #62488d;
-  font-size: 1.15rem;
-  font-weight: 300;
-  line-height: 1;
+  margin: 0;
 }
 
 .clue-reveal {
@@ -985,7 +972,7 @@ stat-card {
   text-transform: uppercase;
   color: #534573;
   text-align: center;
-  margin: 0;
+  margin: 0 0 44px;
   line-height: 1.6;
 }
 
