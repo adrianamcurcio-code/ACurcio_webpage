@@ -882,6 +882,7 @@ stat-card {
   font-size: 1.05rem;
   color: var(--muted);
   margin-bottom: 8px;
+  line-height: 1.5;
 }
 .chapter-quote {
   font-style: italic;
