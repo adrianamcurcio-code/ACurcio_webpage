@@ -899,21 +899,6 @@ stat-card {
 }
 .chapter-block p { color: var(--muted); line-height: 1.6; margin: 0 0 16px; }
 .chapter-emphasis { color: #62488d; font-style: italic; margin-bottom: 16px; }
-
-.text-accent {
-  color: #534573;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.next-question-card {
-  max-width: 420px;
-  margin: 32px 0 8px;
-}
-
-.next-question-card .challenge-card {
-  box-shadow: -6px 0 16px rgba(83, 69, 115, 0.04);
-}
 .image-placeholder {
   width: 60%;
   min-height: 340px;
