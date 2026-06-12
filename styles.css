@@ -1184,9 +1184,30 @@ stat-card {
 }
 
 /* Challenge Cards */
-.challenge-card-single {
-  max-width: 460px;
-  margin: 36px 0 44px;
+.act1-intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 44px;
+  align-items: start;
+  margin: 32px 0 40px;
+}
+
+.act1-text .lead {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin: 0 0 18px;
+  line-height: 1.6;
+}
+
+.act1-card .challenge-card {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .act1-intro-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 }
 
 .challenge-grid {
