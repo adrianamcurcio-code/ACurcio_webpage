@@ -927,8 +927,8 @@ stat-card {
 
 .research-strip {
   background: #ffffff;
-  border-top: 1px solid rgba(83, 69, 115, 0.12);
-  border-bottom: 1px solid rgba(83, 69, 115, 0.12);
+  border-top: 1px solid rgba(237, 230, 247, 0.5);
+  border-bottom: 1px solid rgba(237, 230, 247, 0.5);
   padding: 14px 20px;
    margin-top: 28px;
 }
