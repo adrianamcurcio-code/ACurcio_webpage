@@ -1440,6 +1440,11 @@ stat-card {
   margin: 64px 20px 48px !important;
 }
 
+.closing-emphasis {
+  color: #341C75;
+  font-weight: 600;
+}
+
 @media (max-width: 720px) {
   .challenge-grid {
     grid-template-columns: 1fr;
