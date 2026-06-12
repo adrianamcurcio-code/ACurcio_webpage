@@ -1256,6 +1256,7 @@ stat-card {
   text-transform: uppercase;
   color: #534573;
   font-weight: 700;
+  margin-top: 20px;
 }
 
 .process-bar {
@@ -1268,7 +1269,7 @@ stat-card {
   border-radius: 999px;
   position: relative;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 90px;
 }
 
