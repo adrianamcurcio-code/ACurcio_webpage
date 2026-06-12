@@ -125,11 +125,11 @@ textarea {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1.3fr 0.9fr;
-  gap: 48px;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: calc(100vh - 136px);
+  padding-left: 120px;
 }
 
 .hero-copy {
@@ -143,7 +143,7 @@ textarea {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 20px;
+  margin-bottom: 36px;
   margin-top: 80px
 }
 
@@ -166,9 +166,9 @@ textarea {
 .section-header h2,
 .case-act h3,
 .case-intro h3 {
-  font-size: clamp(2.8rem, 3vw, 4.6rem);
-  line-height: 0.98;
-  letter-spacing: -0.04em;
+  font-size: clamp(2.4rem, 2.8vw, 3.6rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
   margin: 0;
 }
 
@@ -198,6 +198,25 @@ textarea {
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 34px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 18px;
+  background: #EDE6F7;
+  color: #534573;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-btn:hover {
+  background: #534573;
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 .btn {
@@ -819,8 +838,8 @@ stat-card {
 
 @media (max-width: 975px) {
   .hero {
-    grid-template-columns: 1fr;
     min-height: auto;
+    padding-left: 0;
   }
 
   .about-layout,
