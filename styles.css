@@ -900,6 +900,11 @@ stat-card {
 .chapter-block p { color: var(--muted); line-height: 1.6; margin: 0 0 16px; }
 .chapter-emphasis { color: #62488d; font-style: italic; margin-bottom: 16px; }
 
+.highlight-ancestor {
+  color: #534573;
+  font-weight: 600;
+}
+
 .chapter-reveal {
   font-size: 0.82rem;
   font-weight: 300;
