@@ -1012,6 +1012,11 @@ stat-card {
   text-align: center;
   flex: 1;
   max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 130px;
 }
 
 .story-card-label {
@@ -1020,7 +1025,7 @@ stat-card {
   text-transform: uppercase;
   color: #534573;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
 .story-card-text {
