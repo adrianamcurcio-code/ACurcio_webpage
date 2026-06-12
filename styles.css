@@ -956,7 +956,7 @@ stat-card {
 
 .clue-text p {
   font-size: 1rem;
-  color: var(--muted);
+  color: #534573;
   line-height: 1.6;
   margin: 0;
 }
