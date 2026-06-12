@@ -927,8 +927,8 @@ stat-card {
 
 .research-strip {
   background: #ffffff;
-  border-top: 1px solid rgba(237, 230, 247, 0.5);
-  border-bottom: 1px solid rgba(237, 230, 247, 0.5);
+  border-top: 1px solid rgba(83, 69, 115, 0.12);
+  border-bottom: 1px solid rgba(83, 69, 115, 0.12);
   padding: 14px 20px;
    margin-top: 28px;
 }
@@ -944,6 +944,32 @@ stat-card {
   line-height: 1.7;
   white-space: nowrap;
   overflow-x: auto;
+}
+
+.clue-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 44px;
+  align-items: start;
+  margin: 32px 0 0;
+}
+
+.clue-text p {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.clue-card .challenge-card {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .clue-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 }
 
 .image-placeholder {
