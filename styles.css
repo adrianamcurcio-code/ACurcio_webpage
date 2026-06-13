@@ -1041,6 +1041,8 @@ stat-card {
   text-align: center;
   margin: 0 44px 0;
   line-height: 1.6;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .clue-highlight {
