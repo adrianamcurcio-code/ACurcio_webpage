@@ -1085,6 +1085,22 @@ stat-card {
   font-weight: 300;
   line-height: 1;
   flex-shrink: 0;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 350ms ease-out, transform 350ms ease-out;
+}
+
+.story-cards.visible .story-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.story-cards.visible .story-arrow:first-of-type {
+  transition-delay: 100ms;
+}
+
+.story-cards.visible .story-arrow:last-of-type {
+  transition-delay: 350ms;
 }
 
 @media (max-width: 720px) {
@@ -1094,6 +1110,11 @@ stat-card {
   }
   .story-arrow {
     transform: rotate(90deg);
+    opacity: 0;
+  }
+  .story-cards.visible .story-arrow {
+    transform: rotate(90deg);
+    opacity: 1;
   }
 }
 
