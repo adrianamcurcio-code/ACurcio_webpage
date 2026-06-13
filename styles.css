@@ -139,7 +139,6 @@ textarea {
 .hero::before {
   content: '';
   position: absolute;
-  opacity: 0.05;
   top: 0px;
   right: 0px;
   bottom: 0px;
