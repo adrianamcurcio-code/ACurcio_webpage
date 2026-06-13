@@ -973,14 +973,12 @@ stat-card {
   background: #ffffff;
   border-top: 1px solid rgba(83, 69, 115, 0.12);
   border-bottom: 1px solid rgba(83, 69, 115, 0.12);
-  padding: 14px 4px;
+  padding: 14px 8px;
   margin-top: 28px;
 }
 
 .research-strip-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
   font-size: 0.72rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
