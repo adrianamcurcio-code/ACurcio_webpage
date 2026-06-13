@@ -148,7 +148,7 @@ textarea {
   background-size: cover;
   pointer-events: none;
   z-index: 0;
-  filter: blur(1px)
+  filter: blur(0.5px)
 }
 
 .hero-copy {
