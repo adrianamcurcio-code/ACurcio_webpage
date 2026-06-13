@@ -1193,6 +1193,22 @@ stat-card {
   }
 }
 
+/* Mobile: research strip editorial crop */
+@media (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .chapter-reveal {
+    text-align: center;
+  }
+
+  .research-strip {
+    width: 150vw;
+    margin-left: -30vw;
+  }
+}
+
 /* Stats Block Styling */
 .stats-block {
   display: grid;
