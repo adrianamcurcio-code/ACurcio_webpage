@@ -1785,7 +1785,6 @@ stat-card {
 
 /* Closing / Contact Section */
 .closing-section {
-  margin-top: 80px;
   padding: 100px 0 120px;
   background: linear-gradient(180deg, transparent 0%, #F7F6F5 30%, #F4F1F8 70%, #EDE6F7 100%);
   text-align: center;
