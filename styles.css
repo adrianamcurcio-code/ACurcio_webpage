@@ -936,6 +936,30 @@ stat-card {
   margin: 6px 0 18px;
   line-height: 1.12;
 }
+
+/* Soft gradient transition before Act 2 */
+#case-chapter-2 {
+  position: relative;
+}
+
+#case-chapter-2::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 200px;
+  background: linear-gradient(180deg, rgba(237, 230, 247, 0.30) 0%, rgba(247, 246, 245, 0.12) 60%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#case-chapter-2 .chapter-inner {
+  position: relative;
+  z-index: 1;
+}
+
 .act-label {
   display: block;
   font-size: 0.82rem;
