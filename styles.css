@@ -1153,7 +1153,7 @@ stat-card {
 
 @media (max-width: 720px) {
   .page-shell {
-    padding: 24px 20px 36px;
+    padding: 24px 20px 0px;
   }
 
   .topbar {
