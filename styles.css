@@ -144,7 +144,10 @@ textarea {
   pointer-events: none;
   z-index: 0;
   opacity: 0.4;
-  inset: -180px
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .hero-copy {
