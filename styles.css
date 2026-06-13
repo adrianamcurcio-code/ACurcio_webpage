@@ -139,10 +139,10 @@ textarea {
 .hero::before {
   content: '';
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 50px;
+  right: 50px;
+  bottom: 50px;
+  left: 50px;
   background: url('Assets/Background.png') no-repeat center center;
   background-size: cover;
   pointer-events: none;
