@@ -131,7 +131,7 @@ textarea {
   min-height: 78vh;
   padding-left: 120px;
   padding-top: 0;
-  background: #f0f0ef;
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
@@ -139,13 +139,13 @@ textarea {
 .hero::before {
   content: '';
   position: absolute;
-  top: -120px;
-  right: -160px;
+  top: -40px;
+  right: -80px;
   width: 900px;
   height: 900px;
   background: url('Assets/Background.png') no-repeat top right;
   background-size: contain;
-  opacity: 0.18;
+  opacity: 0.6;
   filter: blur(2px);
   pointer-events: none;
   z-index: 0;
@@ -164,7 +164,7 @@ textarea {
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color:##341C75;
+  color:#341C75;
   margin-bottom: 36px;
   margin-top: 50px
 }
