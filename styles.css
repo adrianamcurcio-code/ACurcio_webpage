@@ -1290,6 +1290,7 @@ stat-card {
   gap: 44px;
   align-items: start;
   margin-top: 24px;
+  margin-bottom: 120px;
 }
 
 .tracking-copy-panel {
