@@ -139,6 +139,7 @@ textarea {
 .hero::before {
   content: '';
   position: absolute;
+  opacity: 0.08;
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -147,6 +148,7 @@ textarea {
   background-size: cover;
   pointer-events: none;
   z-index: 0;
+  filter: blur(3px)
 }
 
 .hero-copy {
