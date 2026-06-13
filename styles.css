@@ -934,7 +934,7 @@ stat-card {
 }
 .case-chapter .chapter-title {
   font-size: clamp(1.65rem, 2.65vw, 2.15rem);
-  margin: 6px 0 18px;
+  margin: 6px 0 40px;
   line-height: 1.12;
 }
 
