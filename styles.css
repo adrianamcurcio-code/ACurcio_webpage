@@ -1078,7 +1078,7 @@ stat-card {
 .chapter-image {
   display: flex;
   justify-content: center;
-  margin: 48px 0 56px;
+  margin: 48px 0 150px;
   width: 100%;
   margin-bottom: 150px;
 }
