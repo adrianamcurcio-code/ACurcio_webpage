@@ -139,15 +139,12 @@ textarea {
 .hero::before {
   content: '';
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
   background: url('Assets/Background.png') no-repeat center center;
   background-size: cover;
   pointer-events: none;
   z-index: 0;
   opacity: 0.4;
+  inset: -180px
 }
 
 .hero-copy {
