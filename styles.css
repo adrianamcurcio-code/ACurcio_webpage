@@ -1489,7 +1489,7 @@ stat-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  margin: 42px 0 64px;
+  margin: 42px 0 120px;
 }
 
 .challenge-card {
