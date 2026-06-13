@@ -145,7 +145,7 @@ textarea {
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--accent);
+  color:##341C75;
   margin-bottom: 36px;
   margin-top: 50px
 }
@@ -326,7 +326,7 @@ textarea {
 .about-label {
   display: block;
   background: none;
-  color: var(--accent);
+  color: #341C75;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.2em;
