@@ -915,6 +915,7 @@ stat-card {
 
   .about-layout {
     padding: 0 32px;
+    gap: 0;
   }
 
   .about-visual {
