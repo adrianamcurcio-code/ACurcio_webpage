@@ -130,6 +130,7 @@ textarea {
   background: transparent;
   width: 100vw;
   margin-left:-280px;
+  padding-top: 60px;
 }
 
 .hero::before {
