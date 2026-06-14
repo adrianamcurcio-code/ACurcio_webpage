@@ -126,10 +126,12 @@ textarea {
 .hero {
   display: flex;
   flex-direction: column;
+  position: relative;
   min-height: 78vh;
   background: transparent;
   width: 100vw;
-  margin-left:-280px;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   padding-top: 60px;
 }
 
@@ -310,7 +312,7 @@ textarea {
 
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 48px 0 120px;
+  padding: 0 48px;
 }
 
 /* Soft atmospheric full-bleed section for About */
@@ -378,7 +380,7 @@ textarea {
 
 .about-image {
   align-self: start;
-  margin-top: 104px;
+  margin-top: 48px;
 }
 
 .about-image img {
@@ -876,8 +878,6 @@ stat-card {
   .hero {
     min-height: auto;
     padding: 80px 0;
-    width: 100%;
-    margin-left: 0;
   }
 
   .about-layout,
@@ -1031,8 +1031,6 @@ stat-card {
   font-weight: 500;
   text-align: center;
   line-height: 1.7;
-  white-space: nowrap;
-  overflow-x: auto;
 }
 
 .clue-layout {
@@ -1228,8 +1226,9 @@ stat-card {
   }
 
   .research-strip {
-    width: 150vw;
-    margin-left: -30vw;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
   }
 }
 
@@ -1327,8 +1326,9 @@ stat-card {
 .process-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 12px;
   padding: 16px 18px;
   background: #EDE6F7;
   border-radius: 999px;
@@ -1359,6 +1359,24 @@ stat-card {
   padding: 10px 14px;
   border-radius: 999px;
   background: rgba(237, 230, 247, 0.9);
+}
+
+@media (max-width: 560px) {
+  .process-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 10px;
+    padding: 14px 12px;
+  }
+
+  .process-pill {
+    font-size: 0.72rem;
+    padding: 8px 10px;
+  }
+
+  .process-bar::before {
+    display: none;
+  }
 }
 
 .tracker-card-title {
