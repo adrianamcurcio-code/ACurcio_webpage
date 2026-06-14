@@ -100,6 +100,7 @@ textarea {
 
 .mobile-toggle {
   display: none;
+  flex-direction: column;
   border: none;
   background: transparent;
   width: 34px;
@@ -113,10 +114,28 @@ textarea {
 .mobile-toggle span {
   display: block;
   width: 22px;
-  height: 2px;
-  background: var(--text);
+  height: 3px;
+  background: var(--accent);
   border-radius: 999px;
-  margin: 4px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-toggle span:nth-child(2) {
+  margin: 5px 0;
+}
+
+/* hamburger-to-X animation */
+.mobile-toggle.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-toggle.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.mobile-toggle.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .section {
@@ -310,7 +329,7 @@ textarea {
 
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 48px 0 120px;
+  padding: 0 48px;
 }
 
 /* Soft atmospheric full-bleed section for About */
@@ -378,7 +397,7 @@ textarea {
 
 .about-image {
   align-self: start;
-  margin-top: 104px;
+  margin-top: 48px;
 }
 
 .about-image img {
@@ -1031,8 +1050,6 @@ stat-card {
   font-weight: 500;
   text-align: center;
   line-height: 1.7;
-  white-space: nowrap;
-  overflow-x: auto;
 }
 
 .clue-layout {
@@ -1185,25 +1202,39 @@ stat-card {
   }
 
   .nav-links {
-    position: fixed;
-    inset: 0 auto auto 0;
+    position: absolute;
+    top: 100%;
     right: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(249, 245, 239, 0.98);
+    background: var(--surface);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-    padding: 24px;
+    align-items: stretch;
+    gap: 0;
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(31, 24, 48, 0.14);
     display: flex;
+    min-width: 180px;
+  }
+
+  .nav-links a {
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: background 0.15s ease;
+  }
+
+  .nav-links a:hover {
+    background: var(--accent-soft);
+    opacity: 1;
   }
 
   .nav-links.open {
-    transform: translateX(0);
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
   .mobile-toggle {
@@ -1228,8 +1259,9 @@ stat-card {
   }
 
   .research-strip {
-    width: 150vw;
-    margin-left: -30vw;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
   }
 }
 
@@ -1327,8 +1359,9 @@ stat-card {
 .process-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 12px;
   padding: 16px 18px;
   background: #EDE6F7;
   border-radius: 999px;
@@ -1359,6 +1392,24 @@ stat-card {
   padding: 10px 14px;
   border-radius: 999px;
   background: rgba(237, 230, 247, 0.9);
+}
+
+@media (max-width: 560px) {
+  .process-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 10px;
+    padding: 14px 12px;
+  }
+
+  .process-pill {
+    font-size: 0.72rem;
+    padding: 8px 10px;
+  }
+
+  .process-bar::before {
+    display: none;
+  }
 }
 
 .tracker-card-title {
