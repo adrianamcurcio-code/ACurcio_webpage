@@ -928,10 +928,11 @@ stat-card {
   }
 
   .about-portrait {
-    max-width: 165px;
+    max-width: 200px;
     min-height: 220px;
     border-radius: 16px;
     border: none;
+    margin: 0 auto;
   }
 }
 
