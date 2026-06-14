@@ -894,9 +894,14 @@ stat-card {
 @media (max-width: 975px) {
   .hero {
     min-height: auto;
-    padding: 80px 0;
+    padding: 60px 0 0;
     width: 100%;
     margin-left: 0;
+  }
+
+  .hero::before {
+    background-size: 100% auto;
+    background-position: top center;
   }
 
   .about-layout,
