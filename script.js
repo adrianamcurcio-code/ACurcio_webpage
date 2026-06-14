@@ -3,11 +3,13 @@ const navLinks = document.getElementById('navLinks');
 const navAnchors = navLinks?.querySelectorAll('a');
 
 mobileToggle?.addEventListener('click', () => {
+  mobileToggle.classList.toggle('open');
   navLinks?.classList.toggle('open');
 });
 
 navAnchors?.forEach((anchor) => {
   anchor.addEventListener('click', () => {
+    mobileToggle?.classList.remove('open');
     navLinks?.classList.remove('open');
   });
 });
