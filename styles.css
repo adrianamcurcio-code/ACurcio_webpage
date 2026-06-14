@@ -131,7 +131,6 @@ textarea {
   min-height: 78vh;
   padding: 120px 0;
   background: transparent;
-  position: relative;
   width: 100vw;
   margin-left: calc(50% - 50vw);
 }
