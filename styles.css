@@ -128,7 +128,6 @@ textarea {
   display: flex;
   flex-direction: column;
   min-height: 78vh;
-  padding: 120px 0;
   background: transparent;
   width: 100vw;
   margin-left:-280px;
