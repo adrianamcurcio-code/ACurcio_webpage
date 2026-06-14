@@ -900,7 +900,7 @@ stat-card {
   }
 
   .hero::before {
-    background-size: cover;
+    background-size: auto;
     background-position: top center;
   }
 
