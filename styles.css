@@ -928,7 +928,7 @@ stat-card {
   }
 
   .about-portrait {
-    max-width: 100%;
+    max-width: 165px;
     min-height: 220px;
     border-radius: 16px;
     border: none;
