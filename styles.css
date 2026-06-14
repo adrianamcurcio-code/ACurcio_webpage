@@ -894,7 +894,7 @@ stat-card {
 @media (max-width: 975px) {
   .hero {
     min-height: auto;
-    padding: 60px 0 0;
+    padding: 30px 0 0;
     width: 100%;
     margin-left: 0;
   }
@@ -914,7 +914,7 @@ stat-card {
   }
 
   .about-layout {
-    padding: 0 32px;
+    padding: 0 16px;
     gap: 0;
   }
 
@@ -923,7 +923,7 @@ stat-card {
     margin-top: 0;
   }
   .about {
-    padding: 28px;
+    padding: 16px;
     border-radius: 18px;
     background: linear-gradient(90deg, rgba(75,59,102,0.03) 0%, rgba(250,249,248,0.6) 50%, rgba(75,59,102,0.02) 100%);
   }
@@ -1171,7 +1171,7 @@ stat-card {
 @media (max-width: 720px) {
   .clue-layout {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 16px;
   }
 }
 
@@ -1201,7 +1201,11 @@ stat-card {
 
 @media (max-width: 720px) {
   .page-shell {
-    padding: 24px 20px 36px;
+    padding: 24px 16px 24px;
+  }
+
+  .section {
+    margin-top: 32px;
   }
 
   .topbar {
@@ -1536,7 +1540,7 @@ stat-card {
 @media (max-width: 720px) {
   .act1-intro-layout {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 16px;
   }
 }
 
@@ -1616,7 +1620,7 @@ stat-card {
 @media (max-width: 720px) {
   .challenge-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 12px;
   }
 }
 
@@ -1851,8 +1855,8 @@ stat-card {
 @media (max-width: 975px) {
   .stats-block {
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px 24px;
-    padding: 36px 0;
+    gap: 20px 16px;
+    padding: 24px 0;
   }
 }
 
