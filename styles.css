@@ -327,9 +327,10 @@ textarea {
   gap: 72px;
   align-items: start;
 
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 48px;
+  padding-left: calc((var(--max-width) - 850px) / 2 + 20px);
+  padding-right: 48px;
 }
 
 /* Soft atmospheric full-bleed section for About */
@@ -1609,7 +1610,7 @@ stat-card {
 }
 
 .closing-block {
-  margin: 64px 20px 48px !important;
+  margin: 64px 0 48px !important;
 }
 
 .closing-emphasis {
